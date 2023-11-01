@@ -213,14 +213,35 @@ footer {
   display: none;
 }
 @media screen and (max-width: 576px){
-  .skills-container, .resume-container, footer{
+  .header{
+    background-image: none;
+  }
+   nav,
+   nav > ul,
+  .banner,
+  .skills-container, 
+  .resume-container,
+  .about-info-container,
+   footer{
     flex-direction: column;
   }
+  .banner .profile-pic{
+    width: 100%;
+  }
+  nav > ul{
+    gap: 10px;
+  }
+
+  .banner,
   #what-i-do-description{
     padding: 20px;
   }
-  footer{
+  
+  footer, .about{
     padding: 10px ;
+  }
+  .button-primary{
+    margin-bottom: 15px;
   }
   .footer-column{
     width: 100%;
@@ -233,6 +254,9 @@ footer {
 @media screen and (min-width: 576px) and (max-width: 960px){
   footer{
     padding: 30px ;
+  }
+  .button-primary{
+    margin-bottom: 15px;
   }
 }
 
